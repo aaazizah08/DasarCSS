@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Combinator Selector</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nur Azizah P">
+    <meta name="nim" content="234311022">
+    <style>
+        div p {            /* no 1 */
+            color: red;
+        }
+        div > p {          /* no 2 */
+            background-color: yellow;
+        }
+        div + p {           /* no 3 */
+            background-color: darkgray;           
+        }
+        div ~ p {          /* no 4 */
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is a paragraph. Kesimpulan tentang selektor no 1: selektor no 1 akan mencocokkan semua elemen yang berada di dalam satu elemen tersebut, misalnya elemen <i>div</i>
+        , sehingga warna yang dihasilkan pada penulisan akan sama.</p>
+        <p>This is a paragraph. Kesimpulan tentang selektor no 2: selektor no 2 akan memilih semua elemen yang merupakan turunan dari satu elemen tertentu, misalnya elemen <i>div</i>.</p>
+    </div>
+    <p>This is a paragraph. Kesimpulan tentang selektor no 3: selektor no 3 akan memilah elemen <i>p</i> yang terdapat tepat setelah elemen <i>div</i>
+    , sehingga akan menghasilkan warna yang berbeda dengan keturunan elemen <i>div yang terdapat pada no 1 dan 2</i></p>
+    <p>This is a paragraph. Kesimpulan tentang selektor no 4: selektor no 4 akan memilih semua elemen <i>p</i> yang menjadi satu saudara berikutnya 
+    , sehingga akan menghasilkan warna yang sama dengan no 3. selain itu, <i>background-color</i> yang terdapat pada no 3 tidak akan berpengaru pada elemen berikutnya</p>
+</body>
+
+        
